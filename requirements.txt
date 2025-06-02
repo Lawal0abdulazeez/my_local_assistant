@@ -1,0 +1,9 @@
+llama-cpp-python 
+sentence-transformers 
+chromadb # or faiss-cpu
+python-dotenv # for .env files
+huggingface_hub
+pypdf
+python-docx
+
+# .venv/scripts/activate
