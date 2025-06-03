@@ -159,7 +159,9 @@ def main_cli_loop(assistant: RAGAssistant):
             # Optionally, re-initialize or offer to quit
             # For simplicity here, we just continue the loop.
 
-if __name__ == "__main__":
+
+def main_cli_loop_entry(): # <--- NEW FUNCTION TO BE THE ENTRY POINT
+    """Main entry point for the CLI application."""
     setup_directories()
     rag_assistant_instance = initialize_assistant()
 
@@ -169,3 +171,6 @@ if __name__ == "__main__":
         main_cli_loop(rag_assistant_instance)
     else:
         print("\nFailed to initialize the RAG Assistant. Exiting.")
+
+if __name__ == "__main__":
+    main_cli_loop_entry() # Call the new entry function

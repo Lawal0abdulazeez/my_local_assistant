@@ -1,3 +1,6 @@
+# Temporary environment
+.test_install_venv/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -239,6 +242,7 @@ dmypy.json
 data/
 outputs/
 results/
+examples/
 
 # The Models directory
 models/
